@@ -1,0 +1,15 @@
+class CreateStudents < ActiveRecord::Migration[8.1]
+  def change
+    create_table :students do |t|
+      t.string :nombres
+      t.string :apellidos
+      t.string :carrera
+      t.string :carnet
+      t.date :fecha_de_nacimiento
+      t.integer :edad
+      t.string :celular
+
+      t.timestamps
+    end
+  end
+end
